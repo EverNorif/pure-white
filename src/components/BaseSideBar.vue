@@ -31,35 +31,76 @@
           </el-sub-menu>
         </el-sub-menu>
         <el-menu-item index="2">
-          <template #title>Navigator Two</template>
+          <el-icon>
+            <SwitchFilled/>
+          </el-icon>
+          <template #title>
+            <span>SwitchFilled</span>
+          </template>
+        </el-menu-item>
+        <el-menu-item index="3">
+          <el-icon>
+            <Cherry/>
+          </el-icon>
+          <template #title>
+            <span>Cherry</span>
+          </template>
         </el-menu-item>
         <el-menu-item index="4">
-          <template #title>Navigator Four</template>
+          <el-icon>
+            <Grape/>
+          </el-icon>
+          <template #title>
+            <span>Grape</span>
+          </template>
         </el-menu-item>
         <el-menu-item index="5">
-          <template #title>Navigator Four</template>
+          <el-icon>
+            <Picture/>
+          </el-icon>
+          <template #title>
+            <span>Picture</span>
+          </template>
         </el-menu-item>
         <el-menu-item index="6">
-          <template #title>Navigator Four</template>
+          <el-icon>
+            <User/>
+          </el-icon>
+          <template #title>
+            <span>User</span>
+          </template>
         </el-menu-item>
         <el-menu-item index="7">
-          <template #title>Navigator Four</template>
+          <el-icon>
+            <Connection/>
+          </el-icon>
+          <template #title>
+            <span>Connection</span>
+          </template>
         </el-menu-item>
         <el-menu-item index="8">
-          <template #title>Navigator Four</template>
+          <el-icon>
+            <Message/>
+          </el-icon>
+          <template #title>
+            <span>Message</span>
+          </template>
         </el-menu-item>
         <el-menu-item index="9">
-          <template #title>Navigator Four</template>
+          <el-icon>
+            <Document/>
+          </el-icon>
+          <template #title>
+            <span>Document</span>
+          </template>
         </el-menu-item>
-
         <el-menu-item index="10">
-          <template #title>Navigator Four</template>
-        </el-menu-item>
-        <el-menu-item index="11">
-          <template #title>Navigator Four</template>
-        </el-menu-item>
-        <el-menu-item index="12">
-          <template #title>Navigator Four</template>
+          <el-icon>
+            <Service/>
+          </el-icon>
+          <template #title>
+            <span>Service</span>
+          </template>
         </el-menu-item>
       </el-menu>
     </el-scrollbar>

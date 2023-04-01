@@ -34,4 +34,8 @@ export default {
   height: calc(100vh - 60px);
 }
 
+.el-aside {
+  width: auto;
+}
+
 </style>

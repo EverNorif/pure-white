@@ -25,13 +25,14 @@ const toggleDark = useToggle(isDark)
         <el-menu-item index="2-4-3">item 2-4-3</el-menu-item>
       </el-sub-menu>
     </el-sub-menu>
-    <el-sub-menu index="exampleFeature">
+    <el-sub-menu index="feature">
       <template #title>Feature</template>
-      <el-menu-item index="/example-page">ExamplePage</el-menu-item>
-      <el-menu-item index="status">StatueManagement</el-menu-item>
-      <el-menu-item index="message">Message</el-menu-item>
+      <el-menu-item index="/features/simple-page">SimplePage</el-menu-item>
+      <el-menu-item index="/features/complex-page">ComplexPage</el-menu-item>
+      <el-menu-item index="/features/status-management">StatueManagement</el-menu-item>
+      <el-menu-item index="/features/message">Message</el-menu-item>
     </el-sub-menu>
-    <el-menu-item index="dark-switch" class="no-change">
+    <el-menu-item class="no-change" >
       <el-switch style="margin:auto" v-model="isDark"
                  @change.stop="toggleDark()" size="large" inline-prompt width="20px"
                  :active-icon="MoonNight" :inactive-icon="Sunrise"></el-switch>
