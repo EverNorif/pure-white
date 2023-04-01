@@ -12,17 +12,17 @@ const toggleDark = useToggle(isDark)
       <span>LOGO</span>
     </el-menu-item>
     <div class="flex-grow"/>
-    <el-menu-item index="singleItem">SingleItem</el-menu-item>
-    <el-sub-menu index="nestedItem">
+    <el-menu-item index="/singleItem">SingleItem</el-menu-item>
+    <el-sub-menu index="/nestedItem">
       <template #title>NestedItem</template>
-      <el-menu-item index="2-1">item 2-1</el-menu-item>
-      <el-menu-item index="2-2">item 2-2</el-menu-item>
-      <el-menu-item index="2-3">item 2-3</el-menu-item>
+      <el-menu-item index="/nestedItem/2-1">item 2-1</el-menu-item>
+      <el-menu-item index="/nestedItem/2-2">item 2-2</el-menu-item>
+      <el-menu-item index="/nestedItem/2-3">item 2-3</el-menu-item>
       <el-sub-menu index="2-4">
         <template #title>item 2-4</template>
-        <el-menu-item index="2-4-1">item 2-4-1</el-menu-item>
-        <el-menu-item index="2-4-2">item 2-4-2</el-menu-item>
-        <el-menu-item index="2-4-3">item 2-4-3</el-menu-item>
+        <el-menu-item index="/nestedItem/2-4-1">item 2-4-1</el-menu-item>
+        <el-menu-item index="/nestedItem/2-4-2">item 2-4-2</el-menu-item>
+        <el-menu-item index="/nestedItem/2-4-3">item 2-4-3</el-menu-item>
       </el-sub-menu>
     </el-sub-menu>
     <el-sub-menu index="feature">
