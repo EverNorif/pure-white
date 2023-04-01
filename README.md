@@ -1,17 +1,5 @@
 # pure-white
 
-Element-UI
-
-Pinia
-
-Vue-Router
-
-Axios
-
-
-
-
-
 可以通过如下命令运行本仓库的项目：
 
 ```sh
@@ -25,8 +13,6 @@ npm run dev # 本地运行
 
 npm run build  # build生产项目
 ```
-
-
 
 ## Development
 
@@ -73,9 +59,10 @@ npm run build  # build生产项目
 
 完成主题页面组件的编写之后，需要进行路由注册。相关操作在`router/index.ts`中进行。而无论主题页面是否需要侧边栏，它都需要使用Header栏进行路由管理在`BaseHeader`中已经开启了menu的router状态，只需要在menu-item项中的index属性中指定对应的路由链接即可。
 
-### 全局状态管理
+### 功能使用
 
-本项目使用Pinia进行状态管理，相关使用可以参考官方文档。同时在`views/Pinia-Test.vue`中提供了简单的案例参考。
+1. 本项目使用Pinia进行状态管理，相关使用可以参考官方文档。同时在`views/PiniaTestPage.vue`中提供了简单的案例参考。
 
-### Element UI的使用
+2. 本项目引入Element UI作为组件库，同样可以直接使用。在`views/MessagePage.vue`中提供了Message与Notification的简单使用参考。
 
+   

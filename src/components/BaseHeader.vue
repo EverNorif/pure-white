@@ -59,8 +59,9 @@ const toggleDark = useToggle(isDark)
   background: transparent !important;
 }
 
-.no-change.is-active {
+.no-change {
   border: transparent !important;
+  background: transparent !important;
 }
 
 .el-switch {

@@ -20,7 +20,7 @@
 import {useCounterStore} from "@/stores/counter.ts";
 
 export default {
-  name: "PiniaTest",
+  name: "PiniaTestPage",
   setup() {
     const counter = useCounterStore()
     return {counter}

@@ -2,7 +2,8 @@ import {createRouter, createWebHistory} from 'vue-router'
 import HomePage from "@/views/HomePage.vue"
 import ComplexPage from "@/views/ComplexPage.vue"
 import SimplePage from "@/views/SimplePage.vue"
-import PiniaTest from "@/views/PiniaTest.vue"
+import PiniaTestPage from "@/views/PiniaTestPage.vue"
+import MessagePage from "@/views/MessagePage.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,7 +11,8 @@ const router = createRouter({
         {path: "/", component: HomePage},
         {path: "/features/complex-page", component: ComplexPage},
         {path: "/features/simple-page", component: SimplePage},
-        {path: "/features/status-management", component: PiniaTest},
+        {path: "/features/status-management", component: PiniaTestPage},
+        {path: "/features/message", component: MessagePage},
     ]
 })
 
