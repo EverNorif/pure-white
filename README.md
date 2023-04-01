@@ -65,4 +65,6 @@ npm run build  # build生产项目
 
 2. 本项目引入Element UI作为组件库，同样可以直接使用。在`views/MessagePage.vue`中提供了Message与Notification的简单使用参考。
 
+3. 本项目引入了axios进行请求管理。在`views/AxiosTestPage.vue`中提供了简单的使用案例，同时结合了Element Notification进行消息显示。
+
    
