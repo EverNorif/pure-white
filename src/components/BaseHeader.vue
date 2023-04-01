@@ -7,8 +7,8 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <el-menu mode="horizontal" :ellipsis="false">
-    <el-menu-item index="0" class="no-change">
+  <el-menu mode="horizontal" :ellipsis="false" :router="true">
+    <el-menu-item index="/" class="no-change">
       <span>LOGO</span>
     </el-menu-item>
     <div class="flex-grow"/>
@@ -27,7 +27,7 @@ const toggleDark = useToggle(isDark)
     </el-sub-menu>
     <el-sub-menu index="exampleFeature">
       <template #title>Feature</template>
-      <el-menu-item index="page">ExamplePage</el-menu-item>
+      <el-menu-item index="/example-page">ExamplePage</el-menu-item>
       <el-menu-item index="status">StatueManagement</el-menu-item>
       <el-menu-item index="message">Message</el-menu-item>
     </el-sub-menu>
@@ -46,6 +46,7 @@ const toggleDark = useToggle(isDark)
 
 .el-menu {
   align-items: center;
+  position: relative;
 }
 
 .el-menu-item:hover {
