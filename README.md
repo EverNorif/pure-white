@@ -75,4 +75,7 @@ npm run build  # build生产项目
 
 ### 全局状态管理
 
+本项目使用Pinia进行状态管理，相关使用可以参考官方文档。同时在`views/Pinia-Test.vue`中提供了简单的案例参考。
+
 ### Element UI的使用
+
