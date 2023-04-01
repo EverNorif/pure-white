@@ -36,7 +36,7 @@
 
 <script lang="ts">
 import axios from "axios";
-import {ElNotification} from 'element-plus'
+import {ElMessage} from 'element-plus'
 
 export default {
   name: "AxiosTestPage",
@@ -63,28 +63,19 @@ export default {
       axios.get("https://jsonplaceholder.typicode.com/todos/1")
           .then(response => {
             this.user = response.data;
-            ElNotification({
-              title: 'Success',
+            ElMessage({
               message: 'get message Successfully',
               type: 'success',
             })
           })
     },
     getNotExistPath() {
-      ElNotification({
-        title: 'Info',
-        message: 'request has sent',
-        type: 'info',
-      })
+      ElMessage.info('request has been sent');
       axios.get("https://localhost:8080/xxx")
           .then(response => {
             alert(response.data)
           }).catch(reason => {
-        ElNotification({
-          title: 'Error',
-          message: reason.message,
-          type: 'error',
-        })
+        ElMessage.error(reason.message)
       })
     }
   }
