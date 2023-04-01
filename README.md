@@ -1,6 +1,6 @@
 # pure-white
 
-可以通过如下命令运行本仓库的项目：
+本项目是一个基于Vue3的前端项目，提供一个能够快速复用的前端模板。可以通过如下命令运行本项目：
 
 ```sh
 git clone https://github.com/EverNorif/pure-white
