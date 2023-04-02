@@ -44,7 +44,7 @@ npm run build  # build生产项目
 ```html
 <template>
   <el-container>
-    <el-aside style="width: auto;">
+    <el-aside>
       <BaseSideBar/>
     </el-aside>
     <el-main>
