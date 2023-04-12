@@ -25,6 +25,7 @@ const toggleDark = useToggle(isDark)
         <el-menu-item index="/nestedItem/2-4-3">item 2-4-3</el-menu-item>
       </el-sub-menu>
     </el-sub-menu>
+    <el-menu-item index="/uniFeature">UniFeature</el-menu-item>
     <el-sub-menu index="feature">
       <template #title>Feature</template>
       <el-menu-item index="/features/simple-page">SimplePage</el-menu-item>
