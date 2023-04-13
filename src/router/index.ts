@@ -6,12 +6,14 @@ import PiniaTestPage from "@/views/PiniaTestPage.vue"
 import MessagePage from "@/views/MessagePage.vue"
 import AxiosTestPage from "@/views/AxiosTestPage.vue"
 import UniFeaturePage from "@/views/UniFeaturePage.vue"
+import PaginationPage from "@/views/uni-features/PaginationPage.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {path: "/", component: HomePage},
         {path: "/uniFeature", component: UniFeaturePage},
+        {path: "/uniFeature/pagination", component: PaginationPage},
         {path: "/features/complex-page", component: ComplexPage},
         {path: "/features/simple-page", component: SimplePage},
         {path: "/features/status-management", component: PiniaTestPage},

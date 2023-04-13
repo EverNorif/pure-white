@@ -5,7 +5,7 @@
     </el-aside>
     <el-main>
       <h1> Some Feature.</h1>
-      1.split
+      <p>1. pagination based on element ui.</p>
     </el-main>
 
   </el-container>

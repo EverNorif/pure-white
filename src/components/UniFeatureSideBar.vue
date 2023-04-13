@@ -10,76 +10,12 @@
             <DArrowLeft/>
           </el-icon>
         </el-menu-item>
-        <el-menu-item index="/uniFeature/1">
+        <el-menu-item @click="goTo('/uniFeature/pagination')">
           <el-icon>
-            <SwitchFilled/>
+            <DocumentCopy/>
           </el-icon>
           <template #title>
-            <span>SwitchFilled</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="3">
-          <el-icon>
-            <Cherry/>
-          </el-icon>
-          <template #title>
-            <span>Cherry</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="4">
-          <el-icon>
-            <Grape/>
-          </el-icon>
-          <template #title>
-            <span>Grape</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="5">
-          <el-icon>
-            <Picture/>
-          </el-icon>
-          <template #title>
-            <span>Picture</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="6">
-          <el-icon>
-            <User/>
-          </el-icon>
-          <template #title>
-            <span>User</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="7">
-          <el-icon>
-            <Connection/>
-          </el-icon>
-          <template #title>
-            <span>Connection</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="8">
-          <el-icon>
-            <Message/>
-          </el-icon>
-          <template #title>
-            <span>Message</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="9">
-          <el-icon>
-            <Document/>
-          </el-icon>
-          <template #title>
-            <span>Document</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="10">
-          <el-icon>
-            <Service/>
-          </el-icon>
-          <template #title>
-            <span>Service</span>
+            <span>pagination</span>
           </template>
         </el-menu-item>
       </el-menu>
@@ -91,6 +27,16 @@
 import {ref} from 'vue'
 
 const isCollapse = ref(false)
+</script>
+
+<script lang="ts">
+export default {
+  methods: {
+    goTo(url: string) {
+      this.$router.push(url);
+    }
+  }
+}
 </script>
 
 <style scoped>

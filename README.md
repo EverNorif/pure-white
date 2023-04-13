@@ -68,8 +68,8 @@ npm run build  # build生产项目
 3. 本项目引入了axios进行请求管理。在`views/AxiosTestPage.vue`中提供了简单的使用案例，同时结合了Element Message进行消息显示。
 
 
-
-
 ## 常用功能
 
 本项目实现了一些常用的功能，可以在主页中的`UniFeature`模块查看。相关的功能代码实现则都在`views/uni-features`目录下。
+
+1. `pagination`：基于Element UI的分页功能，这里使用表格分页的形式展示。事实上分页组件的使用可以帮助我们双向绑定currentPage，pageSize等分页关键属性，并不需要绑定table使用
