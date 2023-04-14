@@ -7,6 +7,7 @@ import MessagePage from "@/views/MessagePage.vue"
 import AxiosTestPage from "@/views/AxiosTestPage.vue"
 import UniFeaturePage from "@/views/UniFeaturePage.vue"
 import PaginationPage from "@/views/uni-features/PaginationPage.vue"
+import CodeMirrorPage from "@/views/uni-features/CodeMirrorPage.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +15,7 @@ const router = createRouter({
         {path: "/", component: HomePage},
         {path: "/uniFeature", component: UniFeaturePage},
         {path: "/uniFeature/pagination", component: PaginationPage},
+        {path: "/uniFeature/code-mirror", component: CodeMirrorPage},
         {path: "/features/complex-page", component: ComplexPage},
         {path: "/features/simple-page", component: SimplePage},
         {path: "/features/status-management", component: PiniaTestPage},

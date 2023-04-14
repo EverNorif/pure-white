@@ -6,6 +6,7 @@
     <el-main>
       <h1> Some Feature.</h1>
       <p>1. pagination based on element ui.</p>
+      <p>2. vue-codemirror usage.</p>
     </el-main>
 
   </el-container>

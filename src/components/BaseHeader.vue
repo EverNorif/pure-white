@@ -34,7 +34,7 @@ const toggleDark = useToggle(isDark)
       <el-menu-item index="/features/message">Message</el-menu-item>
       <el-menu-item index="/features/axios">Axios</el-menu-item>
     </el-sub-menu>
-    <el-menu-item class="no-change" >
+    <el-menu-item class="no-change">
       <el-switch style="margin:auto" v-model="isDark"
                  @change.stop="toggleDark()" size="large" inline-prompt width="20px"
                  :active-icon="MoonNight" :inactive-icon="Sunrise"></el-switch>

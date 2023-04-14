@@ -59,7 +59,7 @@ npm run build  # build生产项目
 
 完成主题页面组件的编写之后，需要进行路由注册。相关操作在`router/index.ts`中进行。而无论主题页面是否需要侧边栏，它都需要使用Header栏进行路由管理在`BaseHeader`中已经开启了menu的router状态，只需要在menu-item项中的index属性中指定对应的路由链接即可。
 
-### 功能使用
+### 基础功能
 
 1. 本项目使用Pinia进行状态管理，相关使用可以参考官方文档。同时在`views/PiniaTestPage.vue`中提供了简单的案例参考。
 
@@ -68,8 +68,14 @@ npm run build  # build生产项目
 3. 本项目引入了axios进行请求管理。在`views/AxiosTestPage.vue`中提供了简单的使用案例，同时结合了Element Message进行消息显示。
 
 
-## 常用功能
+## Unified Feature
 
-本项目实现了一些常用的功能，可以在主页中的`UniFeature`模块查看。相关的功能代码实现则都在`views/uni-features`目录下。
+本项目实现了一些常用的通用功能，可以在主页中的`UniFeature`模块查看。相关的功能代码实现则都在`views/uni-features`目录下。
 
 1. `pagination`：基于Element UI的分页功能，这里使用表格分页的形式展示。事实上分页组件的使用可以帮助我们双向绑定currentPage，pageSize等分页关键属性，并不需要绑定table使用
+1. `codeMirror`：前端编辑器CodeMirror的使用，这里简单的使用了Python Language，如果需要其他语言的支持，则需要额外安装相关依赖并在Components中的extensions中进行指定。同时这里使用Vue中的watch监听来匹配Vue主题的dark模式与codeMirror的dark模式。注意这里extensions的初始状态在beforeCreate中指定
+
+
+
+
+

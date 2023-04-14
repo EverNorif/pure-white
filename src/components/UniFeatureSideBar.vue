@@ -18,6 +18,14 @@
             <span>pagination</span>
           </template>
         </el-menu-item>
+        <el-menu-item @click="goTo('/uniFeature/code-mirror')">
+          <el-icon>
+            <Monitor/>
+          </el-icon>
+          <template #title>
+            <span>codeMirror</span>
+          </template>
+        </el-menu-item>
       </el-menu>
     </el-scrollbar>
   </div>
