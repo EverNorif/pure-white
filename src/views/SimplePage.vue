@@ -5,13 +5,17 @@
       <div>
         some content...
       </div>
+      <SocketIOShower/>
     </el-main>
   </el-container>
 </template>
 
 <script>
+import SocketIOShower from "@/components/SocketIOShower.vue";
+
 export default {
-  name: "SimplePage"
+  name: "SimplePage",
+  components: {SocketIOShower}
 }
 </script>
 
