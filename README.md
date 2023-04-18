@@ -75,7 +75,11 @@ npm run build  # build生产项目
 1. `pagination`：基于Element UI的分页功能，这里使用表格分页的形式展示。事实上分页组件的使用可以帮助我们双向绑定currentPage，pageSize等分页关键属性，并不需要绑定table使用
 1. `codeMirror`：前端编辑器CodeMirror的使用，这里简单的使用了Python Language，如果需要其他语言的支持，则需要额外安装相关依赖并在Components中的extensions中进行指定。同时这里使用Vue中的watch监听来匹配Vue主题的dark模式与codeMirror的dark模式。注意这里extensions的初始状态在beforeCreate中指定
 
+## External Feature
 
+该模块记录了一些额外功能的使用，这些功能通常需要一些其他实现的依赖，例如特定后端等。不属于能够直接使用的功能，因此仅作为示例代码记录在不同的branch中。
+
+1. `socket-io`：支持WebSocket，进行前后端双向通信。示例代码需要后端在本地启动，暴露端口为5000，同时使用namespace为`/api`
 
 
 
