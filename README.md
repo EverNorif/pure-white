@@ -14,6 +14,10 @@ npm run dev # 本地运行
 npm run build  # build生产项目
 ```
 
+本地运行效果如下：
+
+![运行效果](./asserts/pure_white.gif)
+
 ## Development
 
 ### BaseHeader与BaseSideBar
